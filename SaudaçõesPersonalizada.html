@@ -1,0 +1,41 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Saudação</title>
+</head>
+<body>
+
+    <button onclick="Saudacoes()">Clique aqui</button>
+    <h1 id="mensagem" style="display: none;"></h1>
+
+    <script>
+        function Saudacoes() {
+            const agora = new Date();
+            const hora = agora.getHours();
+            let saudacao;
+
+            if (hora < 12) {
+                saudacao = "Bom dia";
+            } else if (hora < 18) {
+                saudacao = "Boa tarde";
+            } else {
+                saudacao = "Boa noite";
+            }
+
+            const dataHora = agora.toLocaleString('pt-BR');
+            const mensagem = saudacao + "! Agora são " + dataHora + ".";
+
+            const elementoMensagem = document.getElementById("mensagem");
+            elementoMensagem.textContent = mensagem;
+            elementoMensagem.style.display = "block"; 
+        }
+    </script>
+
+</body>
+</html>
+
+<!-- input variaveis de tempo em codigo de saudacoes com horario. 
+        fazer com que o computador capte horario e data.
+        Como fazer botao chamar saudacoes ao inves de ficar sempre visivel
+        toLocaleStringPara que usa-->
+                            
