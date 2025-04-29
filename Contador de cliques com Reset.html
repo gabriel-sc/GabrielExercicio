@@ -1,0 +1,23 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador de Cliques</title>
+    <div id="contador">Cliques: 0</div>
+</head>
+<body>
+    <button onclick="contarCliques()">Clique aqui</button>
+    <div id="contador">Cliques: 0</div>
+<body>  
+    <script>
+        let cliques = 0;
+        
+        function contarCliques() {
+            cliques++;
+            document.getElementById("contador").textContent = "Cliques: " + cliques;
+        }
+    </script>
+    
+    
+    </script>
+</body>
+</html>
