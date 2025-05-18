@@ -4,22 +4,26 @@
     <title>Contador de Cliques</title>
 </head>
 <body>
-    <div id="contador">Cliques: 0</div><br>
-    <button onclick="contarCliques()">Clique aqui</button>
-    <button onclick="resetarContagem()">Resetar Contagem</button> 
+    
+<button onclick="contarCliques()">Clique aqui</button>
+<button onclick="resetarContagem()">Resetar Contagem</button> 
+            <div id="contador">Cliques: 0</div><br>
 <body>  
     <script>
-        let cliques = 0;
-        function contarCliques() {
-            cliques++;
-            document.getElementById("contador").textContent = "Cliques: " + cliques;
-            }
+let cliques = 0;
+    function contarCliques() {    //criando a funcao
+        cliques++;  // para acrescentar sempre mais 1 
+document.getElementById("contador").textContent = "Cliques: " + cliques;
+            }     
         function resetarContagem() {
-            cliques = 0;
-            document.getElementById("contador").textContent = "Cliques: 0";
+        cliques = 0;
+document.getElementById("contador").textContent = "Cliques: 0";
         }
+        
     </script>   
 </body>
 </html>
+\
+
 
 <!-- criacao de comando para contagem de cliques funcao html -->

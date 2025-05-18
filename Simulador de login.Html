@@ -5,7 +5,7 @@ div em html para exibir resultados se for colocado conteudo no usuario e senha -
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Login Fake, Que Bizarro!</title>
+<title>Try the login!</title>
 <script>
 function validarLogin(event) {
 event.preventDefault();
@@ -15,11 +15,11 @@ const senha = document.getElementById("senha").value;
 
 switch (true) {
 case (usuario === "usuario123" && senha === "senha123"):
-alert("Login ok! Que da hora, hein?");
+alert("Login ok! Congratulations?");
 window.location.href = "pagina-restrita.html";
 break;
 default:
-alert("Eita! Errou o user ou a senha.");
+alert("Eita! Tente seguir o padrao");
 }
 }
 </script>
